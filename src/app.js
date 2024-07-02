@@ -1,7 +1,7 @@
-//funcion agnostica autoConvocada
-const { envs } = require("./config/env.js");
-const { startServer } = require("./server/server.js");
+import { envs }  from "./config/env.js";
+import { startServer } from "./server/server.js";
 
+//funcion agnostica autoConvocada
 const main = () => {
     startServer({
         port: envs.PORT,
